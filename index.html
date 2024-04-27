@@ -80,9 +80,10 @@
         return popCopy
       }
       push(ints) {
-        let pushCopy = this.ints
-        pushCopy.push(4)
-        return pushCopy
+        push(ints){
+          this.ints.push(4)
+          return this.ints
+        }
       }
       getEveryNth(n) {
         let nth = []
